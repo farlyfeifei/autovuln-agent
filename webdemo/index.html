@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoVulnAgent · 自动漏洞挖掘 Agent 实时演示</title>
+<style>
+  :root{
+    --bg:#0b0f14; --panel:#11161d; --panel2:#0e1319; --border:#1e2a38;
+    --fg:#c8d3e0; --dim:#7d8b99; --green:#4ade80; --red:#f87171;
+    --amber:#fbbf24; --accent:#38bdf8;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font-family:ui-monospace,"Cascadia Code","JetBrains Mono",Consolas,"Courier New",monospace;
+       font-size:13px;display:flex;flex-direction:column;height:100vh}
+  header{padding:14px 20px;border-bottom:1px solid var(--border);
+         background:linear-gradient(180deg,#10161f,#0d1219);display:flex;
+         align-items:baseline;gap:14px;flex-wrap:wrap}
+  header h1{margin:0;font-size:16px;font-weight:700;color:#e6edf3;letter-spacing:.4px}
+  header .sub{color:var(--dim);font-size:12px}
+  #status{margin-left:auto;font-size:12px;padding:4px 10px;border:1px solid var(--border);
+          border-radius:4px;color:var(--dim);min-width:84px;text-align:center}
+  #status.ok,#status.pass{color:var(--green);border-color:#1f5132}
+  #status.fail{color:var(--red);border-color:#5a2530}
+  .controls{padding:12px 20px;border-bottom:1px solid var(--border);
+            display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  button{background:#16202b;color:var(--fg);border:1px solid var(--border);
+         font:inherit;padding:8px 16px;border-radius:5px;cursor:pointer;user-select:none}
+  button:hover{border-color:var(--accent);color:#fff}
+  #startBtn{color:var(--green);border-color:#1f5132}
+  #startBtn:hover{border-color:var(--green)}
+  #stopBtn{color:var(--red);border-color:#5a2530}
+  #stopBtn:hover{border-color:var(--red)}
+  .hint{color:var(--dim);font-size:12px}
+  .table-wrap{padding:12px 20px 4px;overflow:auto;max-height:38vh}
+  table{width:100%;border-collapse:collapse;min-width:760px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid #182230;
+        vertical-align:top;white-space:nowrap}
+  th{color:var(--dim);font-weight:600;font-size:12px}
+  td.name{white-space:normal;min-width:180px}
+  .cat{color:var(--dim);font-size:11px}
+  td.cid{color:var(--accent)}
+  .res.running{color:var(--amber)}
+  .res.pass{color:var(--green)}
+  .res.fail{color:var(--red)}
+  td.flag{color:var(--amber);max-width:300px;overflow:hidden;text-overflow:ellipsis}
+  #console{flex:1;margin:0;padding:14px 20px;overflow-y:auto;background:var(--panel2);
+           border-top:1px solid var(--border);line-height:1.55;font-size:12px}
+  .line{white-space:pre-wrap;word-break:break-all}
+  .line.step{color:var(--accent);font-weight:700}
+  .line.thought{color:var(--dim)}
+  .line.action{color:var(--amber)}
+  .line.obs{color:#9db4c8}
+  .line.err{color:var(--red)}
+  footer{padding:8px 20px;border-top:1px solid var(--border);color:var(--dim);font-size:11px}
+</style>
+</head>
+<body>
+  <header>
+    <h1>AutoVulnAgent · 自动漏洞挖掘 Agent 实时演示</h1>
+    <span class="sub">AutoVulnAgent · live agent console</span>
+    <span id="status">连接中…</span>
+  </header>
+
+  <div class="controls">
+    <button id="startBtn">▶ 开始跑分</button>
+    <button id="stopBtn">■ 停止</button>
+    <span class="hint">Mock 靶场 · 本地策略脑 · SSE 实时推送</span>
+  </div>
+
+  <section class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>名称 / 分类</th><th>结果</th>
+          <th>步骤</th><th>得分</th><th>Flag</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </section>
+
+  <pre id="console"></pre>
+
+  <footer>纯本地 Mock · 离线 · 零依赖 &nbsp;|&nbsp; BSRC「Agent+」安全攻防大赛 Demo</footer>
+
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var consoleEl = $('console');
+  var tbody = $('tbody');
+  var statusEl = $('status');
+  var rows = {};   // challenge id -> <tr>
+
+  function truncate(s, n) {
+    s = (s == null ? '' : String(s));
+    return s.length <= n ? s : s.slice(0, n) + '…';
+  }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function log(line, cls) {
+    var div = document.createElement('div');
+    div.className = 'line' + (cls ? ' ' + cls : '');
+    div.textContent = line;
+    consoleEl.appendChild(div);
+    while (consoleEl.childElementCount > 600) consoleEl.removeChild(consoleEl.firstChild);
+    consoleEl.scrollTop = consoleEl.scrollHeight;
+  }
+  function setStatus(text, cls) {
+    statusEl.textContent = text;
+    statusEl.className = cls || '';
+  }
+  function ensureRow(id, name, category) {
+    var tr = rows[id];
+    if (!tr) {
+      tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td class="cid">' + esc(id) + '</td>' +
+        '<td class="name">' + esc(name) +
+          '<br><span class="cat">' + esc(category) + '</span></td>' +
+        '<td class="res running">运行中…</td><td>—</td><td>—</td><td class="flag">—</td>';
+      tbody.appendChild(tr);
+      rows[id] = tr;
+    }
+    return tr;
+  }
+
+  function onEvent(evt) {
+    var d;
+    try { d = JSON.parse(evt.data || '{}'); } catch (e) { return; }
+    switch (d.type) {
+      case 'ready':
+        setStatus(d.running ? '运行中' : '空闲', d.running ? 'ok' : '');
+        log('[webdemo] SSE 已连接' +
+            (d.total_challenges ? ' · 题库 ' + d.total_challenges + ' 道' : '') +
+            ' · 已完成 ' + d.completed);
+        break;
+      case 'run_start':
+        tbody.innerHTML = '';
+        consoleEl.innerHTML = '';
+        rows = {};
+        setStatus('运行中', 'ok');
+        log('[run] 开始跑分: ' + d.challenges + ' 道题 · 模式=' + d.mode +
+            ' · 大脑=' + (d.llm || 'local-policy') +
+            ' · 预算 steps=' + d.budget.max_steps +
+            ' · elapsed=' + d.budget.max_elapsed + 's');
+        break;
+      case 'challenge_start':
+        ensureRow(d.id, d.name, d.category);
+        log('[' + d.id + '] → ' + d.name + ' (' + d.category + ')');
+        break;
+      case 'step':
+        log('step ' + d.index, 'step');
+        log('  思考 thought: ' + truncate(d.thought, 160), 'thought');
+        log('  动作 action : ' + truncate(d.action, 160), 'action');
+        log('  观察 obs    : ' + truncate(d.observation, 240), 'obs');
+        break;
+      case 'challenge_done': {
+        var tr = ensureRow(d.id, d.name, d.category);
+        var cells = tr.children;
+        cells[2].textContent = d.passed ? '通过' : '未通过';
+        cells[2].className = 'res ' + (d.passed ? 'pass' : 'fail');
+        cells[3].textContent = d.steps;
+        cells[4].textContent = d.points;
+        cells[5].textContent = d.flag || (d.passed ? d.ground_truth || '' : '—');
+        cells[5].title = d.flag || '';
+        log('[' + d.id + '] 完成: ' + (d.passed ? 'PASSED' : 'FAILED') +
+            ' · steps=' + d.steps + ' · points=' + d.points +
+            (d.error ? ' · ' + d.error : ''));
+        break;
+      }
+      case 'done':
+        setStatus('完成', 'pass');
+        log('[run] 结束 (' + d.reason + ') · 共 ' + d.total +
+            ' · 通过 ' + d.passed + ' · 得分 ' + d.points);
+        break;
+      case 'error':
+        setStatus('错误', 'fail');
+        log('[run] 错误: ' + d.message, 'err');
+        break;
+    }
+  }
+
+  // SSE: named events handled by addEventListener; onmessage is a fallback.
+  var es = new EventSource('/events');
+  ['ready', 'run_start', 'challenge_start', 'step', 'challenge_done', 'done', 'error']
+    .forEach(function (t) { es.addEventListener(t, onEvent); });
+  es.onmessage = onEvent;
+  es.onerror = function () { /* EventSource auto-reconnects */ };
+
+  $('startBtn').addEventListener('click', function () {
+    fetch('/start', { method: 'GET' }).then(function (res) {
+      return res.text().then(function (t) {
+        if (res.ok) { log('[webdemo] /start → ' + t.trim()); }
+        else { log('[webdemo] /start → ' + t.trim(), 'err'); setStatus('运行中', 'ok'); }
+      });
+    }).catch(function (e) { log('[webdemo] /start 请求失败: ' + e, 'err'); });
+  });
+
+  $('stopBtn').addEventListener('click', function () {
+    fetch('/stop', { method: 'GET' }).then(function (res) {
+      return res.text().then(function (t) { log('[webdemo] /stop → ' + t.trim()); });
+    }).catch(function (e) { log('[webdemo] /stop 请求失败: ' + e, 'err'); });
+  });
+})();
+</script>
+</body>
+</html>

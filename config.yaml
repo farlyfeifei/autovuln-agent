@@ -1,0 +1,30 @@
+# AutoVulnAgent 配置(所有值可被同名环境变量覆盖,见 config.py)
+llm:
+  provider: local        # local | openai | glm | deepseek | comate | opencode
+  model: ""              # 空则由 provider 默认(opencode 默认 glm-5.2)
+  api_key_env: LLM_API_KEY
+  base_url: ""           # 空则由 provider 默认
+  temperature: 0.2
+  max_output_tokens: 1024
+  timeout: 120.0          # 单次 LLM 调用超时(秒);不同于 net.timeout
+
+budget:
+  max_steps: 20          # 单题最多工具动作数
+  max_elapsed: 300.0     # 单题最多秒数
+  max_tokens: 200000     # 单题 LLM token 预算
+  run_max_elapsed: 19800.0  # 全 run 墙钟上限(秒,默认 5.5h,给平台 6h 时限留余量)
+
+net:
+  timeout: 12
+  verify_ssl: false
+  user_agent: "AutoVulnAgent/0.1 (BSRC Agent+)"
+
+adapter:
+  mode: mock             # mock | tsecbench | http
+  challenges_file: ""    # http/tsecbench 模式的题目清单(JSON)
+  base_url: ""           # tsecbench/http 平台的提交地址
+  token_env: AV_SUBMIT_TOKEN
+
+report:
+  out_dir: reports
+  trace_dir: traces

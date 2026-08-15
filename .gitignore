@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+
+# generated run artifacts
+reports/traces/
+reports/run_*.md
+reports/run_*.jsonl
+*.log

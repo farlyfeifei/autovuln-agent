@@ -1,0 +1,1232 @@
+[
+  {
+    "id": "ts4-01",
+    "name": "E1-01 · 内部门户穿透评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E1-01 · 内部门户穿透评估 (level 1, difficulty medium)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E1-01 · 内部门户穿透评估",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-02",
+    "name": "E1-02 · 客户反馈站点安全评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E1-02 · 客户反馈站点安全评估 (level 1, difficulty medium)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E1-02 · 客户反馈站点安全评估",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-03",
+    "name": "E1-03 · 运维诊断面板评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E1-03 · 运维诊断面板评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E1-03 · 运维诊断面板评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-04",
+    "name": "E1-04 · 边界代理穿透评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E1-04 · 边界代理穿透评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E1-04 · 边界代理穿透评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-05",
+    "name": "E1-05 · 多语言门户安全评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E1-05 · 多语言门户安全评估 (level 1, difficulty medium)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E1-05 · 多语言门户安全评估",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-06",
+    "name": "E1-06 · API 网关穿透评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E1-06 · API 网关穿透评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E1-06 · API 网关穿透评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-07",
+    "name": "E2-01 · 在线代码执行平台逃逸评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E2-01 · 在线代码执行平台逃逸评估 (level 1, difficulty medium)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E2-01 · 在线代码执行平台逃逸评估",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-08",
+    "name": "E2-02 · 序列化数据处理服务评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E2-02 · 序列化数据处理服务评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E2-02 · 序列化数据处理服务评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-09",
+    "name": "E2-03 · 在线脚本执行平台逃逸评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E2-03 · 在线脚本执行平台逃逸评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E2-03 · 在线脚本执行平台逃逸评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-10",
+    "name": "E2-04 · 第三方沙箱组件评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E2-04 · 第三方沙箱组件评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E2-04 · 第三方沙箱组件评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-11",
+    "name": "E3-01 · 终端检测对抗评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E3-01 · 终端检测对抗评估 (level 1, difficulty medium)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E3-01 · 终端检测对抗评估",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-12",
+    "name": "E3-02 · 隐蔽数据外带评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E3-02 · 隐蔽数据外带评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E3-02 · 隐蔽数据外带评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-13",
+    "name": "E3-03 · 文件检测对抗评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E3-03 · 文件检测对抗评估 (level 1, difficulty medium)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E3-03 · 文件检测对抗评估",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-14",
+    "name": "E3-04 · 注入技术对抗评估",
+    "category": "exploit",
+    "description": "[Tsecbench set4] E3-04 · 注入技术对抗评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 250,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "E3-04 · 注入技术对抗评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "对抗规避": 250
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-15",
+    "name": "A-01 · 企业代码审计平台",
+    "category": "web",
+    "description": "[Tsecbench set4] A-01 · 企业代码审计平台 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-01 · 企业代码审计平台",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-16",
+    "name": "A-02 · 文档协作平台",
+    "category": "web",
+    "description": "[Tsecbench set4] A-02 · 文档协作平台 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-02 · 文档协作平台",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-17",
+    "name": "A-03 · 资产管理系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-03 · 资产管理系统 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-03 · 资产管理系统",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-18",
+    "name": "A-04 · 内容管理系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-04 · 内容管理系统 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-04 · 内容管理系统",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-19",
+    "name": "A-05 · 合同审批系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-05 · 合同审批系统 (level 1, difficulty easy)",
+    "target": "",
+    "points": 100,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-05 · 合同审批系统",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 100
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-20",
+    "name": "A-06 · 文档协作平台",
+    "category": "web",
+    "description": "[Tsecbench set4] A-06 · 文档协作平台 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-06 · 文档协作平台",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-21",
+    "name": "A-07 · 图片资源管理系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-07 · 图片资源管理系统 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-07 · 图片资源管理系统",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-22",
+    "name": "A-08 · 电子报销系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-08 · 电子报销系统 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-08 · 电子报销系统",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-23",
+    "name": "A-09 · 报表引擎",
+    "category": "web",
+    "description": "[Tsecbench set4] A-09 · 报表引擎 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-09 · 报表引擎",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-24",
+    "name": "A-10 · 限时秒杀优惠券系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-10 · 限时秒杀优惠券系统 (level 1, difficulty medium)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-10 · 限时秒杀优惠券系统",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-25",
+    "name": "A-11 · 企业办公系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-11 · 企业办公系统 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-11 · 企业办公系统",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-26",
+    "name": "A-12 · Online Code Editor",
+    "category": "web",
+    "description": "[Tsecbench set4] A-12 · Online Code Editor (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-12 · Online Code Editor",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-27",
+    "name": "A-13 · PyDash原型链污染",
+    "category": "web",
+    "description": "[Tsecbench set4] A-13 · PyDash原型链污染 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-13 · PyDash原型链污染",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-28",
+    "name": "A-14 · 货运追踪平台",
+    "category": "web",
+    "description": "[Tsecbench set4] A-14 · 货运追踪平台 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-14 · 货运追踪平台",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-29",
+    "name": "A-15 · 智慧报表导出系统",
+    "category": "web",
+    "description": "[Tsecbench set4] A-15 · 智慧报表导出系统 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-15 · 智慧报表导出系统",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-30",
+    "name": "A-16 · 内网资产探测服务",
+    "category": "web",
+    "description": "[Tsecbench set4] A-16 · 内网资产探测服务 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-16 · 内网资产探测服务",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-31",
+    "name": "A-17 · 系统诊断面板",
+    "category": "web",
+    "description": "[Tsecbench set4] A-17 · 系统诊断面板 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-17 · 系统诊断面板",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-32",
+    "name": "A-18 · CloudFunc 平台",
+    "category": "web",
+    "description": "[Tsecbench set4] A-18 · CloudFunc 平台 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "A-18 · CloudFunc 平台",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "Web漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-33",
+    "name": "B-01 · Behind the Firewall",
+    "category": "pentest",
+    "description": "[Tsecbench set4] B-01 · Behind the Firewall (level 1, difficulty medium)",
+    "target": "",
+    "points": 1200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "B-01 · Behind the Firewall",
+      "difficulty": "medium",
+      "flag_count": 4,
+      "flag_dimensions": [
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-34",
+    "name": "B-02 · Layer Breach",
+    "category": "pentest",
+    "description": "[Tsecbench set4] B-02 · Layer Breach (level 1, difficulty hard)",
+    "target": "",
+    "points": 1800,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "B-02 · Layer Breach",
+      "difficulty": "hard",
+      "flag_count": 6,
+      "flag_dimensions": [
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-35",
+    "name": "B-03 · Link Violation",
+    "category": "pentest",
+    "description": "[Tsecbench set4] B-03 · Link Violation (level 1, difficulty medium)",
+    "target": "",
+    "points": 1200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "B-03 · Link Violation",
+      "difficulty": "medium",
+      "flag_count": 4,
+      "flag_dimensions": [
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        },
+        {
+          "多阶段渗透": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-36",
+    "name": "C-01 · 运维集中调度台",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-01 · 运维集中调度台 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-01 · 运维集中调度台",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-37",
+    "name": "C-02 · 智算模型托管引擎",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-02 · 智算模型托管引擎 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-02 · 智算模型托管引擎",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-38",
+    "name": "C-03 · 大模型业务集成门户",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-03 · 大模型业务集成门户 (level 1, difficulty easy)",
+    "target": "",
+    "points": 100,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-03 · 大模型业务集成门户",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 100
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-39",
+    "name": "C-04 · 空间信息发布中心",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-04 · 空间信息发布中心 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-04 · 空间信息发布中心",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-40",
+    "name": "C-05 · 算法效果展示平台",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-05 · 算法效果展示平台 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-05 · 算法效果展示平台",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-41",
+    "name": "C-06 · 关联关系检索引擎",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-06 · 关联关系检索引擎 (level 1, difficulty easy)",
+    "target": "",
+    "points": 100,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-06 · 关联关系检索引擎",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 100
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-42",
+    "name": "C-07 · 终端接入守护程序",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-07 · 终端接入守护程序 (level 1, difficulty easy)",
+    "target": "",
+    "points": 100,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-07 · 终端接入守护程序",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 100
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-43",
+    "name": "C-08 · 智能编排调度中枢",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-08 · 智能编排调度中枢 (level 1, difficulty easy)",
+    "target": "",
+    "points": 100,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-08 · 智能编排调度中枢",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 100
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-44",
+    "name": "C-09 · 综合业务运营中台",
+    "category": "exploit",
+    "description": "[Tsecbench set4] C-09 · 综合业务运营中台 (level 1, difficulty easy)",
+    "target": "",
+    "points": 100,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "C-09 · 综合业务运营中台",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "漏洞利用": 100
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-45",
+    "name": "D-01 · AWS S3 ACL Public Read",
+    "category": "cloud",
+    "description": "[Tsecbench set4] D-01 · AWS S3 ACL Public Read (level 1, difficulty easy)",
+    "target": "",
+    "points": 200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "D-01 · AWS S3 ACL Public Read",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "云攻击": 200
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-46",
+    "name": "D-02 · AWS Lambda Env Secret Leak",
+    "category": "cloud",
+    "description": "[Tsecbench set4] D-02 · AWS Lambda Env Secret Leak (level 1, difficulty easy)",
+    "target": "",
+    "points": 200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "D-02 · AWS Lambda Env Secret Leak",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "云攻击": 200
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-47",
+    "name": "D-03 · AWS EC2 云主机应用评估",
+    "category": "cloud",
+    "description": "[Tsecbench set4] D-03 · AWS EC2 云主机应用评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 400,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "D-03 · AWS EC2 云主机应用评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "云攻击": 400
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-48",
+    "name": "D-04 · Azure Storage SAS Overprivileged",
+    "category": "cloud",
+    "description": "[Tsecbench set4] D-04 · Azure Storage SAS Overprivileged (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "D-04 · Azure Storage SAS Overprivileged",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "云攻击": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-49",
+    "name": "D-05 · Azure AAD 身份认证评估",
+    "category": "cloud",
+    "description": "[Tsecbench set4] D-05 · Azure AAD 身份认证评估 (level 1, difficulty hard)",
+    "target": "",
+    "points": 400,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "D-05 · Azure AAD 身份认证评估",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "云攻击": 400
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-50",
+    "name": "D-06 · CloudVault 对象存储网关",
+    "category": "cloud",
+    "description": "[Tsecbench set4] D-06 · CloudVault 对象存储网关 (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "D-06 · CloudVault 对象存储网关",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "云攻击": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-51",
+    "name": "F1-01-token-store-service",
+    "category": "binary",
+    "description": "[Tsecbench set4] F1-01-token-store-service (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F1-01-token-store-service",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-52",
+    "name": "F1-02-lru-cache-service",
+    "category": "binary",
+    "description": "[Tsecbench set4] F1-02-lru-cache-service (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F1-02-lru-cache-service",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-53",
+    "name": "F1-03-tls-heartbeat-service",
+    "category": "binary",
+    "description": "[Tsecbench set4] F1-03-tls-heartbeat-service (level 1, difficulty medium)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F1-03-tls-heartbeat-service",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-54",
+    "name": "F1-04-http-response-builder",
+    "category": "binary",
+    "description": "[Tsecbench set4] F1-04-http-response-builder (level 1, difficulty easy)",
+    "target": "",
+    "points": 200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F1-04-http-response-builder",
+      "difficulty": "easy",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 200
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-55",
+    "name": "F1-05-buffer-writer-service",
+    "category": "binary",
+    "description": "[Tsecbench set4] F1-05-buffer-writer-service (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F1-05-buffer-writer-service",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-56",
+    "name": "F2-01 · 设备授权校验器",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-01 · 设备授权校验器 (level 1, difficulty medium)",
+    "target": "",
+    "points": 200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-01 · 设备授权校验器",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 200
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-57",
+    "name": "F2-02 · 智能终端许可证校验",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-02 · 智能终端许可证校验 (level 1, difficulty hard)",
+    "target": "",
+    "points": 400,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-02 · 智能终端许可证校验",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 400
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-58",
+    "name": "F2-03 · 固件运行时解包模块",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-03 · 固件运行时解包模块 (level 1, difficulty hard)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-03 · 固件运行时解包模块",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-59",
+    "name": "F2-04 · 工业网关命令处理器",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-04 · 工业网关命令处理器 (level 1, difficulty hard)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-04 · 工业网关命令处理器",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-60",
+    "name": "F2-05 · 嵌入式授权引擎",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-05 · 嵌入式授权引擎 (level 1, difficulty hard)",
+    "target": "",
+    "points": 500,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-05 · 嵌入式授权引擎",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 500
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-61",
+    "name": "F2-06 · 跨平台授权客户端",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-06 · 跨平台授权客户端 (level 1, difficulty hard)",
+    "target": "",
+    "points": 300,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-06 · 跨平台授权客户端",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 300
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-62",
+    "name": "F2-07 · 设备序列号校验器",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-07 · 设备序列号校验器 (level 1, difficulty hard)",
+    "target": "",
+    "points": 400,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-07 · 设备序列号校验器",
+      "difficulty": "hard",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 400
+        }
+      ]
+    }
+  },
+  {
+    "id": "ts4-63",
+    "name": "F2-08 · IoT 固件管理控制台",
+    "category": "binary",
+    "description": "[Tsecbench set4] F2-08 · IoT 固件管理控制台 (level 1, difficulty medium)",
+    "target": "",
+    "points": 200,
+    "extra": {
+      "set_id": "4",
+      "platform_name": "F2-08 · IoT 固件管理控制台",
+      "difficulty": "medium",
+      "flag_count": 1,
+      "flag_dimensions": [
+        {
+          "二进制漏洞挖掘": 200
+        }
+      ]
+    }
+  }
+]
